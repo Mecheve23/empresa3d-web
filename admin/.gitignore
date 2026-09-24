@@ -1,0 +1,7 @@
+# Ignorar archivos temporales y subidas de prueba de usuarios
+/archivos_cotizaciones/*
+!/archivos_cotizaciones/.gitkeep
+
+# Configuración de entornos locales
+.vscode/
+fiveserver.config.js

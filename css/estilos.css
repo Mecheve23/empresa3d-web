@@ -1,0 +1,156 @@
+/* Configuración General */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Separa los 3 bloques */
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo del Logo */
+.logo-container a { display: flex; align-items: center; text-decoration: none; }
+.logo-img { width: 40px; margin-right: 10px; }
+.logo-texto { font-weight: bold; font-size: 1.5rem; color: #002e5b; }
+
+/* Menú de Navegación */
+.nav-links ul { display: flex; list-style: none; }
+.nav-links ul li { position: relative; padding: 0 15px; }
+.nav-links ul li a { text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
+.nav-links ul li a:hover, .nav-links ul li a.active { color: #007bff; border-bottom: 2px solid #007bff; }
+
+/* --- SUBMENÚ "NOSOTROS" --- */
+.submenu {
+    display: none; /* Se oculta por defecto */
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+.submenu li { width: 100%; padding: 10px; }
+.dropdown:hover .submenu { display: block; } /* Se muestra al pasar el mouse */
+
+/* Botón Azul */
+.btn-cotizar {
+    background: #007bff;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-cotizar:hover { background: #0056b3; }
+/* Estilos para el Cuerpo de la Página de Inicio */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9; /* Puedes cambiar esto por una imagen de fondo luego */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #007bff; /* El azul de tu imagen */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #0056b3;
+}
+/* Esto asegura que el submenú sea vertical y esté bien ubicado */
+.nav-links ul li.dropdown {
+    position: relative; /* Necesario para que el submenú se posicione respecto a este item */
+}
+
+
+
+
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: none !important; /* Quitamos la línea azul del hover del padre */
+    font-size: 0.9rem;
+}
+
+/* --- ESTILOS DEL FOOTER (PIE DE PÁGINA) --- */
+.main-footer {
+    background-color: #1a1a1a; /* Color oscuro */
+    color: #ffffff;
+    padding: 40px 5% 20px 5%;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #007bff; /* Azul para los títulos */
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}

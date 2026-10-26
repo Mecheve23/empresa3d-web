@@ -1,4 +1,4 @@
-#  Plataforma Web Integral - Diseña y Fabrica 3D
+#  Plataforma Web Sistema de gestion comercial - Diseña y Fabrica 3D
 
 Plataforma web dinámica diseñada y desarrollada para automatizar la captación comercial, catálogo de productos y gestión de cotizaciones personalizadas de servicios de impresión 3D y prototipado industrial.
 
